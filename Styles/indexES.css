@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@1,300&display=swap');
+html{
+    font-size: 10px;
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--fontFamily);
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+:root{
+    --fontFamily: 'Chakra Petch', sans-serif;;
+    --strongGreen: #123c4a;
+    --lightGreen: #3184a0;
+    --lightGrey: rgb(110, 110, 110);
+    --whatsappGreen: #01c349;
+    --discordBlue: #7188d8;
+    --languageOn: rgb(118, 182, 118);
+}
+
+.string-name{
+    color: white;
+    position: absolute;
+    left: 40%;
+}
+.string-title{
+    font-size: 6rem;
+    color: white;
+}
+.string-footer{
+    font-size: 2rem;
+    color: white;
+}
+.string-subtitle{
+    color: var(--strongGreen);
+    font-size: 3rem;
+    font-weight: bold;
+}
+.string-price{
+    font-size: 1.5rem;
+    line-height: 3rem;
+}
+.string-description{
+    font-size: 1.4rem;
+}
+.string-alert{
+    font-size: 1.3rem;
+    margin-left: 10px;
+}
+.string-english{
+    color: var(--lightGrey);
+    font-size: 1.5rem;
+}
+.string-español{
+    color: white;
+    font-size: 1.5rem;
+}
+.icon{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+.icon-nightfall{
+    background-image: url(../Resources/img/Nightfall_Logo.png);
+    filter: brightness(1) invert(1);
+}
+.icon-conqueror{
+    background-image: url(../Resources/img/Conqueror_Logo.png);
+}
+.icon-dungeon{
+    background-image: url(../Resources/img/Dungeon_Logo.png);
+    filter: brightness(1) invert(1);
+}
+.icon-raid{
+    background-image: url(../Resources/img/Raid_Logo.png);
+    filter: brightness(1) invert(1);
+}
+
+.head{
+    height: 40px;
+    padding-top: 10px;
+    background-color: var(--strongGreen);
+    text-align: center;
+}
+.language-options{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    right: 15px;
+    top: 10px;
+}
+.language-options__en{
+    width: 70px;
+    height: 25px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.language-options__es{
+    width: 70px;
+    height: 25px;
+    background-color: var(--languageOn);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.content{
+    height: 90vh;
+    width: 100%;
+}
+.presentation{
+    position: relative;
+    background-image: url("../Resources/img/presentation-background.jpg");
+    background-size: cover;
+    width: 100%;
+    height: 50%;
+    box-shadow: 0px 2px 5px 0px var(--strongGreen);
+}
+.presentation__title{
+    position: absolute;
+    left: 16px;
+    bottom: 80px;
+    width: 20%;
+}
+.presentation__footer{
+    position: absolute;
+    left: 16px;
+    bottom: 25px;
+}
+.information{
+    display: flex;
+    height: 50%;
+    width: 100%;
+}
+.information__prices{
+    width: 40%;
+    padding: 25px 20px 0px 20px;
+}
+.price{
+    border-top: 1px solid var(--lightGrey);
+    border-bottom: 1px solid var(--lightGrey);
+    display: flex;
+    align-items: center;
+    margin: 10px;
+}
+.information__contacts{
+    width: 60%;
+    padding: 25px 20px 0px 20px;
+}
+.contact-apps{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+    height: 150px;
+}
+.contact-wa{
+    background-image: url(../Resources/img/WhatsApp_Logo.jpg);
+    background-color: var(--whatsappGreen);
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 40%;
+    border-radius: 15px;
+}
+.contact-d{
+    background-image: url(../Resources/img/Discord_Logo.png);
+    background-color: var(--discordBlue);
+    background-position: center;
+    background-size: 30%;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 40%;
+    border-radius: 15px;
+}
+.contact-wa:hover{
+    box-shadow: 0px 0px 5px black;
+}
+.contact-d:hover{
+    box-shadow: 0px 0px 5px black;
+}
